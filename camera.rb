@@ -23,7 +23,7 @@ class Camera
   end
 
   def cleanup
-    `rm *_#{@index}.jpg`
+    `rm #{Dir.pwd}/#{@index}/*_#{@index}.jpg`
   end
 
   def today

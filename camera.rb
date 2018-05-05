@@ -35,6 +35,6 @@ class Camera
   end
 
   def now
-    `date +%Y%m%d%H%M%S`.chomp!
+    Time.now.to_i.to_s
   end
 end

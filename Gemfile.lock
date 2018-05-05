@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chronic (0.10.2)
+    multi_json (1.13.1)
+    streamio-ffmpeg (3.0.2)
+      multi_json (~> 1.8)
+    whenever (0.10.0)
+      chronic (>= 0.6.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  streamio-ffmpeg
+  whenever
+
+BUNDLED WITH
+   1.16.1

@@ -15,9 +15,9 @@ class Camera
   def create_daily_video
     FFMPEG::Transcoder.new(
         '',
-        "#{@index}/#{today}_#{@index}.mp4",
+        "#{Dir.pwd}/#{@index}/#{today}_#{@index}.mp4",
         {video_codec: 'libx264', x264_preset: 'slow', threads: 4},
-        input: "*#{@index}.jpg",
+        input: "#{Dir.pwd}/#{@index}/*#{@index}.jpg",
         input_options: {framerate: '2', pattern_type: 'glob'}
     ).run
   end

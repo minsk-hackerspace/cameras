@@ -9,7 +9,7 @@ class Camera
 
   def snapshot
     Dir.mkdir(Dir.pwd + '/'+ @index) unless Dir.exist?(Dir.pwd + '/'+ @index)
-    `#{@snapshot_str.chomp!} #{current_file}.jpg`
+    `#{@snapshot_str.chomp} #{current_file}.jpg`
   end
 
   def create_daily_video

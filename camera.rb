@@ -35,6 +35,6 @@ class Camera
   end
 
   def now
-    Time.now.to_i.to_s
+    Time.now.strftime '%d-%b %H:%M:%S'
   end
 end

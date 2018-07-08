@@ -5,7 +5,21 @@ cameras = []
 camera_strings.each_with_index { |c, i| cameras << Camera.new(c, 'cam_' + i.to_s) }
 cameras.each { |camera| camera.snapshot }
 
-sleep 30
+sleep 15
+
+camera_strings = File.readlines 'cameras'
+cameras = []
+camera_strings.each_with_index { |c, i| cameras << Camera.new(c, 'cam_' + i.to_s) }
+cameras.each { |camera| camera.snapshot }
+
+sleep 15
+
+camera_strings = File.readlines 'cameras'
+cameras = []
+camera_strings.each_with_index { |c, i| cameras << Camera.new(c, 'cam_' + i.to_s) }
+cameras.each { |camera| camera.snapshot }
+
+sleep 15
 
 camera_strings = File.readlines 'cameras'
 cameras = []

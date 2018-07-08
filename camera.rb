@@ -27,7 +27,7 @@ class Camera
   end
 
   def today
-    `date +"%d-%m-%y"`.chomp!
+    `date +"%d-%b-%y"`.chomp!
   end
 
   def current_file

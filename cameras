@@ -3,4 +3,4 @@ ffmpeg -y -loglevel error -i rtsp://192.168.128.13:554/user=admin_password=tlJwp
 curl http://192.168.128.14/image.jpg >
 ssh pi@alisa -p 2022 'fswebcam -q -r 640x480 -s --jpeg 80 ~/snapshot.jpg' && scp -P 2022 pi@alisa:~/snapshot.jpg
 ffmpeg -y -loglevel error -i rtsp://192.168.128.18:554/user=admin_password=tlJwpbo6_channel=1_stream=0.sdp?real_stream -vframes 1 -r 1
-ffmpeg -y -loglevel error -i rtsp://192.168.128.11:554/av0_1 
+ffmpeg -y -loglevel error -i rtsp://192.168.128.11:554/av0_1

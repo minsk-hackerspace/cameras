@@ -18,7 +18,7 @@ class Camera
         "#{Dir.pwd}/#{@index}/#{today}_#{@index}.mp4",
         {video_codec: 'libx264', x264_preset: 'slow', threads: 4},
         input: "#{Dir.pwd}/#{@index}/*#{@index}.jpg",
-        input_options: {framerate: '2', pattern_type: 'glob'}
+        input_options: {framerate: '16', pattern_type: 'glob'}
     ).run
   end
 
